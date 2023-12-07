@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>第5章反応　STEP1-初級問題</title>
+	<link rel = "stylesheet" href="website.css">
+</head>
+
+<body>
+	<div class = "title">
+	<h1 class = "daimei">プログラム復習コンテンツ</h1>
+	<div class="home"></div>
+	</div>
+
+	<h1 class = "daimei2">第5章反応　STEP1-初級問題</h1>
+
+	<div class = "yokonarabi">
+	<div class = "mondai">
+	<p class="midasi1">問題のコード</p>
+	<img src="5syou_1_syokyuu_mondai.png">
+	</div>
+
+	<div class = "gamen">
+	<p class="midasi2">プログラム実行画面</p>
+	<div class = "video">
+	<video controls muted autoplay loop src="5syou_1_syokyuu_kekka.mp4"></video>
+	</div>
+	</div>
+	</div>
+
+	<p class="midasi3">問題文</p>
+	<div class = "mondaibun">
+	<p>上図は,マウスを追跡して黒い円を表示させるプログラムです.</p>
+	<p>(1)プログラムが動き始めたときに１回だけ実行されるように,プログラムを埋めてください.</p>
+	<p>(2)プログラムが止まるまで繰り返し実行されるように,プログラムを埋めてください.</p>
+	<p>(3)マウスのx座標とy座標を中心に直径10の円を描くように,プログラムを埋めてください.</p>
+	
+	<input type="checkbox" id="check1">
+	<label class="check1" for="check1">ヒント</label>
+	<div class = "hinto">
+	<p>(1)setupを用いることで１回だけ実行される.</p>
+	<p>(2)drawを用いることで止まるまで繰り返し実行される.</p>
+	<p>(3)mouseX変数を用いることでマウスのx座標を保持することができる.</p>
+	</div>
+	</div>
+	
+	<p class="midasi4">解答欄</p>
+	<div class = "kaitouran">
+	<p>
+	<label>(1)<input type="text" id="one" size="80" placeholder="解答を入力"></label>
+	<p id = "text1"></p>
+	</p>
+
+
+	<p>
+	<label>(2)<input type="text" id="two" size="80" placeholder="解答を入力"</label>
+	<p id = "text2"></p>
+	</p>
+
+	<p>
+	<label>(3)<input type="text" id="three" size="80" placeholder="解答を入力"</label>
+	<p id = "text3"></p>
+	</p>
+
+
+
+	<p>(1)void setup()</p>
+	<p>(2)void draw()</p>
+	<p>(3)ellipse(mouseX, mouseY, 10, 10);</p>
+	
+	<input type="button" id="btn" value="判定">
+	
+	
+	</div>
+	<script src = "main.js"></script>	
+</body>
+
+</html>
